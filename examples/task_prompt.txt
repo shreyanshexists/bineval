@@ -1,0 +1,4 @@
+Summarize the news article in a short paragraph.
+The summary must be coherent, factually consistent with the source, fluent,
+and focused on the most newsworthy information. Do not invent facts, URLs,
+quotes, or numbers. Do not dwell on trivia.

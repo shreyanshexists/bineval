@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bineval"
+version = "0.1.0"
+description = "BinEval: interpretable LLM evaluation via atomic binary questions"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "BinEval working implementation" }]
+keywords = ["evaluation", "llm", "nlp", "bineval"]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[project.scripts]
+bineval = "bineval.cli:main"
+
+[project.urls]
+Paper = "https://arxiv.org/abs/2606.27226"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
